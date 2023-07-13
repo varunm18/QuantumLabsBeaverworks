@@ -98,6 +98,7 @@ namespace MITRE.QSD.L02 {
     /// register is in a combination of all possible measurement outcomes, and
     /// each superposition term has an equal amplitude to the others.
     operation E03_PrepareUniform (register : Qubit[]) : Unit {
+        // ApplyToEach(H, register);
         for i in 0 .. Length(register) - 1 {
             H(register[i]);
         }

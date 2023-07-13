@@ -14,34 +14,34 @@ using Microsoft.Quantum.Intrinsic;
 using Microsoft.Quantum.Intrinsic.Interfaces;
 using Microsoft.Quantum.Simulation.Core;
 
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E01_SwapAmplitues\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":34,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qubitA\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":30},\"Item2\":{\"Line\":1,\"Column\":36}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qubitB\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":52}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given two qubits. Both qubits are in\",\" arbitrary, unknown states:\",\"\",\"     |qubitA> = a|0> + b|1>\",\"     |qubitB> = c|0> + d|1>\",\"\",\" Use the two-qubit gates in Q# to switch their amplitudes, so\",\" this is the end result:\",\"\",\"     |qubitA> = c|0> + d|1>\",\"     |qubitB> = a|0> + b|1>\",\"\",\" # Input\",\" ## qubitA\",\" The first qubit, which starts in the state a|0> + b|1>.\",\"\",\" ## qubitB\",\" The second qubit, which starts in the state c|0> + d|1>.\",\"\",\" # Remarks\",\" This investigates how to apply quantum gates that take more than one\",\" qubit.\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E01_SwapAmplitues\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":34,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qubitA\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":30},\"Item2\":{\"Line\":1,\"Column\":36}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qubitB\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":52}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given two qubits. Both qubits are in\",\" arbitrary, unknown states:\",\"\",\"     |qubitA> = a|0> + b|1>\",\"     |qubitB> = c|0> + d|1>\",\"\",\" Use the two-qubit gates in Q# to switch their amplitudes, so\",\" this is the end result:\",\"\",\"     |qubitA> = c|0> + d|1>\",\"     |qubitB> = a|0> + b|1>\",\"\",\" # Input\",\" ## qubitA\",\" The first qubit, which starts in the state a|0> + b|1>.\",\"\",\" ## qubitB\",\" The second qubit, which starts in the state c|0> + d|1>.\",\"\",\" # Remarks\",\" This investigates how to apply quantum gates that take more than one\",\" qubit.\"]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E01_SwapAmplitues\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":34,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E02_ReverseRegister\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":74,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":40}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you're given a register of qubits with unknown\",\" length. Each qubit is in an arbitrary, unknown state. Your goal\",\" is to reverse the register, so the order of qubits is reversed.\",\"\",\" For example, if the register had 3 qubits where:\",\"\",\"     |register[0]> = a|0> + b|1>\",\"     |register[1]> = c|0> + d|1>\",\"     |register[2]> = e|0> + f|1>\",\"\",\" Your goal would be to modify the qubits in the register so that\",\" the qubit's states are reversed:\",\"\",\"     |register[0]> = e|0> + f|1>\",\"     |register[1]> = c|0> + d|1>\",\"     |register[2]> = a|0> + b|1>\",\"\",\" Note that the register itself is immutable, so you can't just reorder\",\" the elements like you would in a classical array. For instance, you\",\" can't change the contents of register[0], you can only modify the state\",\" of the qubit at register[0] using quantum gates. In other words, you\",\" must reverse the register by reversing the states of the qubits\",\" themselves, without changing the actual order of the qubits in the\",\" register.\",\"\",\" # Input\",\" ## register\",\" The qubit register that you need to reverse.\",\"\",\" # Remarks\",\" This investigates the combination of arrays and multi-qubit gates.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E02_ReverseRegister\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":74,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E03_PrepareBellStates\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":103,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"registers\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":43}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given an array of qubit registers. There are\",\" four registers in the array, and each register contains two qubits. All\",\" eight qubits will be in the |0> state, so each register is in the state\",\" |00>.\",\"\",\" Your goal is to put the four registers into these four states:\",\"\",\"     |registers[0]> = 1/√2(|00> + |11>)\",\"     |registers[1]> = 1/√2(|00> - |11>)\",\"     |registers[2]> = 1/√2(|01> + |10>)\",\"     |registers[3]> = 1/√2(|01> - |10>)\",\"\",\" These four states are known as the Bell States. They are the simplest\",\" examples of full entanglement between two qubits.\",\"\",\" # Input\",\" ## registers\",\" An array of four two-qubit registers. All of the qubits are in the |0>\",\" state.\",\"\",\" # Remarks\",\" This investigates how to prepare the Bell states.\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E02_ReverseRegister\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":73,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":40}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you're given a register of qubits with unknown\",\" length. Each qubit is in an arbitrary, unknown state. Your goal\",\" is to reverse the register, so the order of qubits is reversed.\",\"\",\" For example, if the register had 3 qubits where:\",\"\",\"     |register[0]> = a|0> + b|1>\",\"     |register[1]> = c|0> + d|1>\",\"     |register[2]> = e|0> + f|1>\",\"\",\" Your goal would be to modify the qubits in the register so that\",\" the qubit's states are reversed:\",\"\",\"     |register[0]> = e|0> + f|1>\",\"     |register[1]> = c|0> + d|1>\",\"     |register[2]> = a|0> + b|1>\",\"\",\" Note that the register itself is immutable, so you can't just reorder\",\" the elements like you would in a classical array. For instance, you\",\" can't change the contents of register[0], you can only modify the state\",\" of the qubit at register[0] using quantum gates. In other words, you\",\" must reverse the register by reversing the states of the qubits\",\" themselves, without changing the actual order of the qubits in the\",\" register.\",\"\",\" # Input\",\" ## register\",\" The qubit register that you need to reverse.\",\"\",\" # Remarks\",\" This investigates the combination of arrays and multi-qubit gates.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E02_ReverseRegister\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":73,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E03_PrepareBellStates\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":103,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"registers\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":43}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given an array of qubit registers. There are\",\" four registers in the array, and each register contains two qubits. All\",\" eight qubits will be in the |0> state, so each register is in the state\",\" |00>.\",\"\",\" Your goal is to put the four registers into these four states:\",\"\",\"     |registers[0]> = 1/√2(|00> + |11>)\",\"     |registers[1]> = 1/√2(|00> - |11>)\",\"     |registers[2]> = 1/√2(|01> + |10>)\",\"     |registers[3]> = 1/√2(|01> - |10>)\",\"\",\" These four states are known as the Bell States. They are the simplest\",\" examples of full entanglement between two qubits.\",\"\",\" # Input\",\" ## registers\",\" An array of four two-qubit registers. All of the qubits are in the |0>\",\" state.\",\"\",\" # Remarks\",\" This investigates how to prepare the Bell states.\"]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E03_PrepareBellStates\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":103,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E04_PrepareGHZState\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":133,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":40}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a qubit register of unknown length. All\",\" of the qubits in it are in the |0> state, so the whole register is in\",\" the state |0...0>.\",\"\",\" Your task is to transform this register into this state:\",\"\",\"     |register> = 1/√2(|0...0> + |1...1>)\",\"\",\" For example, if the register had 5 qubits, you would need to put it in\",\" the state 1/√2(|00000> + |11111>). These states are called the GHZ\",\" states.\",\"\",\" # Input\",\" ## register\",\" The qubit register. It is in the state |0...0>.\",\"\",\" # Remarks\",\" This will investigate how to prepare maximally entangled states for an\",\" arbitrary number of qubits.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E04_PrepareGHZState\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":133,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E05_CombineMultipleGates\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":153,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":45}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a qubit register of length four. All of\",\" its qubits are in the |0> state initially, so the whole register is in\",\" the state |0000>.\",\" Your goal is to put it into the following state:\",\"\",\"     |register> = 1/√2(|0101> - |0110>)\",\"\",\" # Input\",\" ## register\",\" The qubit register. It is in the state |0000>.\",\"\",\" # Remarks\",\" You will need to use the H, X, Z, and CNOT gates to achieve this.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E05_CombineMultipleGates\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":153,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E06_PrepareNonUniform\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":175,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":42}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a register with two qubits in the |00>\",\" state. Your goal is to put it in this non-uniform superposition:\",\"\",\"     |register> = 1/√2*|00> + 1/2(|10> + |11>)\",\"\",\" Note that this state will have a 50% chance of being measured as |00>,\",\" a 25% chance of being measured as |10>, and a 25% chance of being\",\" measured as |11>.\",\"\",\" # Input\",\" ## register\",\" A register with two qubits in the |00> state.\",\"\",\" # Remarks\",\" This investigates applying controlled operations besides CNOT.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E06_PrepareNonUniform\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":175,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E07_EntangleTarget\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":204,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":31},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":51},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a three-qubit register and an extra\",\" \\\"target\\\" qubit. All of the qubits are in the |0> state. Your goal is to\",\" put the register into a uniform superposition and then entangle it with\",\" the target qubit such that the target is a |1> when the register is\",\" |001>. To be more specific, you must prepare this state:\",\"\",\"     |register,target> = 1/√8(|000,0> + |001,1> + |010,0> + |011,0>\",\"                            + |100,0> + |101,0> + |110,0> + |111,0>)\",\"\",\" # Input\",\" ## register\",\" A register of three qubits, in the |000> state.\",\"\",\" ## target\",\" A qubit in the |0> state. It should be |1> when the register is |001>.\",\"\",\" # Remarks\",\" This investigates how to implement zero-controlled (a.k.a. anti-\",\" controlled) gates in Q#.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E07_EntangleTarget\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":204,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E08_PrepareComplexState\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":233,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":44}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a three-qubit register in the |000>\",\" state. Your goal is to transform it into this uneven superposition:\",\"\",\"     |register> = 1/√2*|000> + 1/2(|111> - |100>)\",\"\",\" # Input\",\" ## register\",\" A register with three qubits in the |000> state.\",\"\",\" # Remarks\",\" This is a challenging problem that combines all the concepts covered\",\" so far:\",\"  - Quantum superposition\",\"  - Quantum entanglement\",\"  - Qubit registers\",\"  - Single- and multi-qubit gates\",\"  - Phase\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E08_PrepareComplexState\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":233,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C01_ThreeTermsEqualAmp\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":259,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":43}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" === CHALLENGE PROBLEMS === ///\",\"\",\"\",\"\",\" # Summary\",\" In this problem, you are given a two-qubit register in the |00> state.\",\" Your goal is to put it into this superposition:\",\"\",\"     |register> = 1/√3(|00> + |01> + |10>)\",\"\",\" Note that all three terms have equal amplitude.\",\"\",\" # Input\",\" ## register\",\" A two-qubit register in the |00> state.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C01_ThreeTermsEqualAmp\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":259,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C02_PrepareWState\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":277,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":30},\"Item2\":{\"Line\":1,\"Column\":38}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this problem, you are given a three-qubit register in the |000>\",\" state. Your goal is to put it into this superposition:\",\"\",\"     |register> = 1/√3(|100> + |010> + |001>)\",\"\",\" Note that all states have equal amplitude. This is known as the\",\" three-qubit \\\"W State\\\".\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C02_PrepareWState\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":277,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C03_EncodeCosine\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":321,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":37}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this problem, you are given a three-qubit register in the |000>\",\" state. Your goal is to encode 8 samples of a cosine wave into its\",\" amplitude. The samples should be evenly spaced in π/4 increments,\",\" starting with 0 and ending with 7π/4. The cosine wave samples are laid\",\" out in the table below:\",\"\",\"  Index  |  Value\",\" ------- | -------\",\"    0    |    1\",\"    1    |   1/√2\",\"    2    |    0\",\"    3    |  -1/√2\",\"    4    |   -1\",\"    5    |  -1/√2\",\"    6    |    0\",\"    7    |   1/√2\",\"\",\" Note that these samples are not normalized; if they were used directly\",\" as amplitudes, they would result in a total probability greater than 1.\",\"\",\" Your first task is to normalize the cosine wave samples so they can be\",\" used as amplitudes. Your second task is to encode these 8 normalized\",\" values as the amplitudes of the three-qubit register.\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\",\"\",\" # Remarks\",\" This kind of challenge is common in quantum computing. Essentially, you\",\" need to construct an efficient circuit that will take real data and\",\" encode it into the superposition of a qubit register. Normally, it\",\" would take 8 doubles to store these values in conventional memory - a\",\" total of 512 classical bits. You're going to encode the exact same data\",\" in 3 qubits. We'll talk more about how quantum computers do things\",\" faster than classical computers once we get to quantum algorithms, but\",\" this is a good first hint.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C03_EncodeCosine\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":321,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C04_EncodeSine\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":349,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":35}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" This problem is the same as Challenge 3, but now you must construct a\",\" superposition using 8 samples of a sine wave instead of a cosine wave.\",\" For your convenience, the sine samples are listed in this table:\",\"\",\"  Index  |  Value\",\" ------- | -------\",\"    0    |    0\",\"    1    |   1/√2\",\"    2    |    1\",\"    3    |   1/√2\",\"    4    |    0\",\"    5    |  -1/√2\",\"    6    |   -1\",\"    7    |  -1/√2\",\"\",\" Once again, these values aren't normalized, so you will have to\",\" normalize them before using them as state amplitudes.\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C04_EncodeSine\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":349,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E04_PrepareGHZState\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":141,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":40}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a qubit register of unknown length. All\",\" of the qubits in it are in the |0> state, so the whole register is in\",\" the state |0...0>.\",\"\",\" Your task is to transform this register into this state:\",\"\",\"     |register> = 1/√2(|0...0> + |1...1>)\",\"\",\" For example, if the register had 5 qubits, you would need to put it in\",\" the state 1/√2(|00000> + |11111>). These states are called the GHZ\",\" states.\",\"\",\" # Input\",\" ## register\",\" The qubit register. It is in the state |0...0>.\",\"\",\" # Remarks\",\" This will investigate how to prepare maximally entangled states for an\",\" arbitrary number of qubits.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E04_PrepareGHZState\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":141,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E05_CombineMultipleGates\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":163,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":45}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a qubit register of length four. All of\",\" its qubits are in the |0> state initially, so the whole register is in\",\" the state |0000>.\",\" Your goal is to put it into the following state:\",\"\",\"     |register> = 1/√2(|0101> - |0110>)\",\"\",\" # Input\",\" ## register\",\" The qubit register. It is in the state |0000>.\",\"\",\" # Remarks\",\" You will need to use the H, X, Z, and CNOT gates to achieve this.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E05_CombineMultipleGates\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":163,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E06_PrepareNonUniform\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":189,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":42}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a register with two qubits in the |00>\",\" state. Your goal is to put it in this non-uniform superposition:\",\"\",\"     |register> = 1/√2*|00> + 1/2(|10> + |11>)\",\"\",\" Note that this state will have a 50% chance of being measured as |00>,\",\" a 25% chance of being measured as |10>, and a 25% chance of being\",\" measured as |11>.\",\"\",\" # Input\",\" ## register\",\" A register with two qubits in the |00> state.\",\"\",\" # Remarks\",\" This investigates applying controlled operations besides CNOT.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E06_PrepareNonUniform\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":189,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E07_EntangleTarget\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":217,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":31},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":51},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a three-qubit register and an extra\",\" \\\"target\\\" qubit. All of the qubits are in the |0> state. Your goal is to\",\" put the register into a uniform superposition and then entangle it with\",\" the target qubit such that the target is a |1> when the register is\",\" |001>. To be more specific, you must prepare this state:\",\"\",\"     |register,target> = 1/√8(|000,0> + |001,1> + |010,0> + |011,0>\",\"                            + |100,0> + |101,0> + |110,0> + |111,0>)\",\"\",\" # Input\",\" ## register\",\" A register of three qubits, in the |000> state.\",\"\",\" ## target\",\" A qubit in the |0> state. It should be |1> when the register is |001>.\",\"\",\" # Remarks\",\" This investigates how to implement zero-controlled (a.k.a. anti-\",\" controlled) gates in Q#.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E07_EntangleTarget\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":217,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E08_PrepareComplexState\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":252,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":44}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a three-qubit register in the |000>\",\" state. Your goal is to transform it into this uneven superposition:\",\"\",\"     |register> = 1/√2*|000> + 1/2(|111> - |100>)\",\"\",\" # Input\",\" ## register\",\" A register with three qubits in the |000> state.\",\"\",\" # Remarks\",\" This is a challenging problem that combines all the concepts covered\",\" so far:\",\"  - Quantum superposition\",\"  - Quantum entanglement\",\"  - Qubit registers\",\"  - Single- and multi-qubit gates\",\"  - Phase\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"E08_PrepareComplexState\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":252,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C01_ThreeTermsEqualAmp\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":282,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":43}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" === CHALLENGE PROBLEMS === ///\",\"\",\"\",\"\",\" # Summary\",\" In this problem, you are given a two-qubit register in the |00> state.\",\" Your goal is to put it into this superposition:\",\"\",\"     |register> = 1/√3(|00> + |01> + |10>)\",\"\",\" Note that all three terms have equal amplitude.\",\"\",\" # Input\",\" ## register\",\" A two-qubit register in the |00> state.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C01_ThreeTermsEqualAmp\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":282,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C02_PrepareWState\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":301,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":30},\"Item2\":{\"Line\":1,\"Column\":38}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this problem, you are given a three-qubit register in the |000>\",\" state. Your goal is to put it into this superposition:\",\"\",\"     |register> = 1/√3(|100> + |010> + |001>)\",\" 000 100 010\",\" Note that all states have equal amplitude. This is known as the\",\" three-qubit \\\"W State\\\".\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C02_PrepareWState\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":301,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C03_EncodeCosine\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":347,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":37}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this problem, you are given a three-qubit register in the |000>\",\" state. Your goal is to encode 8 samples of a cosine wave into its\",\" amplitude. The samples should be evenly spaced in π/4 increments,\",\" starting with 0 and ending with 7π/4. The cosine wave samples are laid\",\" out in the table below:\",\"\",\"  Index  |  Value\",\" ------- | -------\",\"    0    |    1\",\"    1    |   1/√2\",\"    2    |    0\",\"    3    |  -1/√2\",\"    4    |   -1\",\"    5    |  -1/√2\",\"    6    |    0\",\"    7    |   1/√2\",\"\",\" Note that these samples are not normalized; if they were used directly\",\" as amplitudes, they would result in a total probability greater than 1.\",\"\",\" Your first task is to normalize the cosine wave samples so they can be\",\" used as amplitudes. Your second task is to encode these 8 normalized\",\" values as the amplitudes of the three-qubit register.\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\",\"\",\" # Remarks\",\" This kind of challenge is common in quantum computing. Essentially, you\",\" need to construct an efficient circuit that will take real data and\",\" encode it into the superposition of a qubit register. Normally, it\",\" would take 8 doubles to store these values in conventional memory - a\",\" total of 512 classical bits. You're going to encode the exact same data\",\" in 3 qubits. We'll talk more about how quantum computers do things\",\" faster than classical computers once we get to quantum algorithms, but\",\" this is a good first hint.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C03_EncodeCosine\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":347,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C04_EncodeSine\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":378,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":35}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" This problem is the same as Challenge 3, but now you must construct a\",\" superposition using 8 samples of a sine wave instead of a cosine wave.\",\" For your convenience, the sine samples are listed in this table:\",\"\",\"  Index  |  Value\",\" ------- | -------\",\"    0    |    0\",\"    1    |   1/√2\",\"    2    |    1\",\"    3    |   1/√2\",\"    4    |    0\",\"    5    |  -1/√2\",\"    6    |   -1\",\"    7    |  -1/√2\",\"\",\" Once again, these values aren't normalized, so you will have to\",\" normalize them before using them as state amplitudes.\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"MITRE.QSD.L03\",\"Name\":\"C04_EncodeSine\"},\"Attributes\":[],\"SourceFile\":\"/home/ubuntu/varun/do-not-modify/L03/L03.qs\",\"Position\":{\"Item1\":378,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
 #line hidden
 namespace MITRE.QSD.L03
 {
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 35, 75)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 35, 74)]
     public partial class E01_SwapAmplitues : Operation<(Qubit,Qubit), QVoid>, ICallable
     {
         public E01_SwapAmplitues(IOperationFactory m) : base(m)
@@ -66,11 +66,17 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "E01_SwapAmplitues";
         String ICallable.FullName => "MITRE.QSD.L03.E01_SwapAmplitues";
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__SWAP
+        {
+            get;
+            set;
+        }
+
         public override Func<(Qubit,Qubit), QVoid> __Body__ => (__in__) =>
         {
             var (qubitA,qubitB) = __in__;
-#line 39 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 38 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__SWAP.Apply((qubitA, qubitB));
 #line hidden
             return QVoid.Instance;
         }
@@ -78,6 +84,7 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__SWAP = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.SWAP));
         }
 
         public override IApplyData __DataIn__((Qubit,Qubit) data) => new In(data);
@@ -88,7 +95,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 75, 104)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 74, 104)]
     public partial class E02_ReverseRegister : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public E02_ReverseRegister(IOperationFactory m) : base(m)
@@ -97,11 +104,29 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "E02_ReverseRegister";
         String ICallable.FullName => "MITRE.QSD.L03.E02_ReverseRegister";
+        protected ICallable Length__
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__SWAP
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 77 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 75 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            foreach (var i in new QRange(0L, ((register.Length / 2L) - 1L)))
+#line hidden
+            {
+#line 76 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+                Microsoft__Quantum__Intrinsic__SWAP.Apply((register[i], register[((register.Length - 1L) - i)]));
+            }
+
 #line hidden
             return QVoid.Instance;
         }
@@ -109,6 +134,8 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+            this.Microsoft__Quantum__Intrinsic__SWAP = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.SWAP));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -119,7 +146,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 104, 134)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 104, 142)]
     public partial class E03_PrepareBellStates : Operation<IQArray<IQArray<Qubit>>, QVoid>, ICallable
     {
         public E03_PrepareBellStates(IOperationFactory m) : base(m)
@@ -128,11 +155,51 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "E03_PrepareBellStates";
         String ICallable.FullName => "MITRE.QSD.L03.E03_PrepareBellStates";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CNOT
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<IQArray<Qubit>>, QVoid> __Body__ => (__in__) =>
         {
             var registers = __in__;
+#line 108 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            foreach (var register in registers)
+#line hidden
+            {
+#line 109 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+                Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
 #line 110 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+                Microsoft__Quantum__Intrinsic__CNOT.Apply((register[0L], register[1L]));
+            }
+
+#line 113 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(registers[1L][1L]);
+#line 115 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(registers[2L][1L]);
+#line 117 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(registers[3L][1L]);
+#line 118 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(registers[3L][1L]);
 #line hidden
             return QVoid.Instance;
         }
@@ -140,6 +207,10 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__CNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CNOT));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
         }
 
         public override IApplyData __DataIn__(IQArray<IQArray<Qubit>> data) => data;
@@ -150,7 +221,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 134, 154)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 142, 164)]
     public partial class E04_PrepareGHZState : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public E04_PrepareGHZState(IOperationFactory m) : base(m)
@@ -159,11 +230,37 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "E04_PrepareGHZState";
         String ICallable.FullName => "MITRE.QSD.L03.E04_PrepareGHZState";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Length__
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CNOT
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 136 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 143 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 144 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            foreach (var i in new QRange(0L, (register.Length - 2L)))
+#line hidden
+            {
+#line 145 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+                Microsoft__Quantum__Intrinsic__CNOT.Apply((register[i], register[(i + 1L)]));
+            }
+
 #line hidden
             return QVoid.Instance;
         }
@@ -171,6 +268,9 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+            this.Microsoft__Quantum__Intrinsic__CNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CNOT));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -181,7 +281,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 154, 176)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 164, 190)]
     public partial class E05_CombineMultipleGates : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public E05_CombineMultipleGates(IOperationFactory m) : base(m)
@@ -190,11 +290,45 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "E05_CombineMultipleGates";
         String ICallable.FullName => "MITRE.QSD.L03.E05_CombineMultipleGates";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CNOT
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 156 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 165 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[1L]);
+#line 166 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[2L]);
+#line 167 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(register[2L]);
+#line 168 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[2L]);
+#line 169 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__CNOT.Apply((register[2L], register[3L]));
+#line 170 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[2L]);
 #line hidden
             return QVoid.Instance;
         }
@@ -202,6 +336,10 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
+            this.Microsoft__Quantum__Intrinsic__CNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CNOT));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -212,7 +350,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 176, 205)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 190, 218)]
     public partial class E06_PrepareNonUniform : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public E06_PrepareNonUniform(IOperationFactory m) : base(m)
@@ -221,11 +359,19 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "E06_PrepareNonUniform";
         String ICallable.FullName => "MITRE.QSD.L03.E06_PrepareNonUniform";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 181 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 193 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 194 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((register.Slice(new QRange(0L, 0L)), register[1L]));
 #line hidden
             return QVoid.Instance;
         }
@@ -233,6 +379,7 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -243,7 +390,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 205, 234)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 218, 253)]
     public partial class E07_EntangleTarget : Operation<(IQArray<Qubit>,Qubit), QVoid>, ICallable
     {
         public E07_EntangleTarget(IOperationFactory m) : base(m)
@@ -267,11 +414,39 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "E07_EntangleTarget";
         String ICallable.FullName => "MITRE.QSD.L03.E07_EntangleTarget";
+        protected ICallable Microsoft__Quantum__Canon__ApplyToEach
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
         public override Func<(IQArray<Qubit>,Qubit), QVoid> __Body__ => (__in__) =>
         {
             var (register,target) = __in__;
-#line 212 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 224 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__H, register));
+#line 225 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[0L]);
+#line 226 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[1L]);
+#line 228 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Controlled.Apply((register, target));
+#line 230 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[0L]);
+#line 231 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[1L]);
 #line hidden
             return QVoid.Instance;
         }
@@ -279,6 +454,9 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
         }
 
         public override IApplyData __DataIn__((IQArray<Qubit>,Qubit) data) => new In(data);
@@ -289,7 +467,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 234, 260)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 253, 283)]
     public partial class E08_PrepareComplexState : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public E08_PrepareComplexState(IOperationFactory m) : base(m)
@@ -298,11 +476,39 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "E08_PrepareComplexState";
         String ICallable.FullName => "MITRE.QSD.L03.E08_PrepareComplexState";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CNOT
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 240 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 257 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 258 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((register.Slice(new QRange(0L, 0L)), register[1L]));
+#line 259 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__CNOT.Apply((register[1L], register[2L]));
+#line 260 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__CNOT.Apply((register[1L], register[0L]));
+#line 261 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(register[0L]);
+#line 262 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__CNOT.Apply((register[1L], register[0L]));
 #line hidden
             return QVoid.Instance;
         }
@@ -310,6 +516,9 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__CNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CNOT));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -320,7 +529,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 260, 278)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 283, 302)]
     public partial class C01_ThreeTermsEqualAmp : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public C01_ThreeTermsEqualAmp(IOperationFactory m) : base(m)
@@ -329,11 +538,45 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "C01_ThreeTermsEqualAmp";
         String ICallable.FullName => "MITRE.QSD.L03.C01_ThreeTermsEqualAmp";
+        protected IUnitary<(Double,Qubit)> Microsoft__Quantum__Intrinsic__Ry
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__ArcCos
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__Sqrt
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CNOT
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 262 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 284 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__Ry.Apply(((Microsoft__Quantum__Math__ArcCos.Apply(Microsoft__Quantum__Math__Sqrt.Apply((1D / 3D))) * 2D), register[0L]));
+#line 285 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((register.Slice(new QRange(0L, 0L)), register[1L]));
+#line 286 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__CNOT.Apply((register[1L], register[0L]));
 #line hidden
             return QVoid.Instance;
         }
@@ -341,6 +584,11 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__Ry = this.__Factory__.Get<IUnitary<(Double,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.Ry));
+            this.Microsoft__Quantum__Math__ArcCos = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.ArcCos));
+            this.Microsoft__Quantum__Math__Sqrt = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.Sqrt));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__CNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CNOT));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -351,7 +599,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 278, 322)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 302, 348)]
     public partial class C02_PrepareWState : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public C02_PrepareWState(IOperationFactory m) : base(m)
@@ -360,11 +608,35 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "C02_PrepareWState";
         String ICallable.FullName => "MITRE.QSD.L03.C02_PrepareWState";
+        protected ICallable<IQArray<Qubit>, QVoid> C01_ThreeTermsEqualAmp__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Microsoft__Quantum__Canon__ApplyToEach
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 280 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 303 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            C01_ThreeTermsEqualAmp__.Apply(register);
+#line 304 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__X, register.Slice(new QRange(0L, 1L))));
+#line 305 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Controlled.Apply((register.Slice(new QRange(0L, 1L)), register[2L]));
+#line 306 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__X, register.Slice(new QRange(0L, 1L))));
 #line hidden
             return QVoid.Instance;
         }
@@ -372,6 +644,9 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.C01_ThreeTermsEqualAmp__ = this.__Factory__.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(C01_ThreeTermsEqualAmp));
+            this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -382,7 +657,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 322, 350)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 348, 379)]
     public partial class C03_EncodeCosine : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public C03_EncodeCosine(IOperationFactory m) : base(m)
@@ -391,11 +666,37 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "C03_EncodeCosine";
         String ICallable.FullName => "MITRE.QSD.L03.C03_EncodeCosine";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 324 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 349 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 350 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(register[0L]);
+#line 351 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[2L]);
+#line 352 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((register.Slice(new QRange(2L, 2L)), register[1L]));
+#line 353 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Controlled.Apply((register.Slice(new QRange(1L, 2L)), register[0L]));
 #line hidden
             return QVoid.Instance;
         }
@@ -403,6 +704,9 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -413,7 +717,7 @@ namespace MITRE.QSD.L03
         }
     }
 
-    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 350, -1)]
+    [SourceLocation("/home/ubuntu/varun/do-not-modify/L03/L03.qs", OperationFunctor.Body, 379, -1)]
     public partial class C04_EncodeSine : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public C04_EncodeSine(IOperationFactory m) : base(m)
@@ -422,11 +726,37 @@ namespace MITRE.QSD.L03
 
         String ICallable.Name => "C04_EncodeSine";
         String ICallable.FullName => "MITRE.QSD.L03.C04_EncodeSine";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 352 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 380 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[2L]);
+#line 381 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((new QArray<Qubit>(register[2L]), register[1L]));
+#line 382 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[1L]);
+#line 383 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 384 "/home/ubuntu/varun/do-not-modify/L03/L03.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(register[0L]);
 #line hidden
             return QVoid.Instance;
         }
@@ -434,6 +764,9 @@ namespace MITRE.QSD.L03
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
