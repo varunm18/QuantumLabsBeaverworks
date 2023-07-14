@@ -28,8 +28,14 @@ namespace MITRE.QSD.L04 {
     /// A qubit that is entangled with another qubit in the state
     /// 1/√2(|00> + |11>).
     operation E01_SuperdenseEncode (buffer : Bool[], pairA : Qubit) : Unit {
-        // TODO
-        fail "Not implemented.";
+
+        if buffer[0]{
+            Z(pairA);
+        }
+
+        if buffer[1]{
+            X(pairA);
+        }
     }
 
 
@@ -54,8 +60,13 @@ namespace MITRE.QSD.L04 {
     /// A classical bit array containing the two bits that were encoded in the
     /// entangled pair. Use false for 0 and true for 1.
     operation E02_SuperdenseDecode (pairA : Qubit, pairB : Qubit) : Bool[] {
-        // TODO
-        fail "Not implemented.";
+       
+        CNOT(pairA, pairB);
+        H(pairA);
+        
+        let res = [M(pairA), M(pairB)];
+        let buffer = ResultArrayAsBoolArray(res);
+        return buffer;
     }
 
 
@@ -95,8 +106,15 @@ namespace MITRE.QSD.L04 {
         bPublic : Bool,
         qubit: Qubit
     ) : Bool {
-        // TODO
-        fail "Not implemented.";
+        if aSecret{
+            X(qubit);
+        }
+
+        if aPublic{
+            H(qubit);
+        }
+
+        return (aPublic==bPublic);
     }
 
 
@@ -125,7 +143,10 @@ namespace MITRE.QSD.L04 {
         bPublic : Bool,
         qubit: Qubit
     ) : (Bool, Bool) {
-        // TODO
-        fail "Not implemented.";
+        if bPublic{
+            H(qubit);
+        }
+
+        return(ResultAsBool(M(qubit)), aPublic==bPublic);
     }
 }
