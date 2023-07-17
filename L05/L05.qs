@@ -69,9 +69,9 @@ namespace MITRE.QSD.L05 {
         // Hint: If you phase-flip the target qubit twice, it will have the
         // same effect as not flipping it at all. Phase-flipping it three
         // times will have the same effect as only flipping it once, etc.
-
-        // TODO
-        fail "Not implemented.";
+        for qubit in input{
+            Controlled Z([qubit], target);
+        }
     }
 
 
@@ -109,8 +109,8 @@ namespace MITRE.QSD.L05 {
         input : Qubit[],
         target : Qubit
     ) : Unit {
-        // TODO
-        fail "Not implemented.";
+        Controlled Z([input[firstIndex]], target);
+        Controlled Z([input[secondIndex]], target);
     }
 
 
@@ -153,7 +153,21 @@ namespace MITRE.QSD.L05 {
         // Note: Remember to put the input and target in the correct states
         // before running the oracle!
 
-        // TODO
-        fail "Not implemented.";
+        use (input, target) = (Qubit[inputLength], Qubit());
+        ApplyToEach(H, input);
+        X(target);
+        oracle(input, target);
+        ApplyToEach(H, input);
+
+        mutable constant = true;
+        for qubit in input{
+            if M(qubit)==One{
+                set constant = false;
+                X(qubit);
+            }
+        }
+        X(target);
+
+        return constant;
     }
 }

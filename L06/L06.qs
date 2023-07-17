@@ -97,8 +97,22 @@ namespace MITRE.QSD.L06 {
         op : ((Qubit[], Qubit[]) => Unit),
         input : Bool[]
     ) : Bool[] {
-        // TODO
-        fail "Not implemented.";
+        use register = Qubit[Length(input)];
+        use register2 = Qubit[Length(input)];
+
+        for i in 0..Length(register)-1{
+            if input[i]{
+                X(register[i]);
+            }
+        }
+        
+        op(register, register2);
+
+        let res = MultiM(register2);
+        let output = ResultArrayAsBoolArray(res);
+        ResetAll(register+register2);
+        return output;
+
     }
 
 
@@ -126,8 +140,16 @@ namespace MITRE.QSD.L06 {
         op : ((Qubit[], Qubit[]) => Unit),
         inputSize : Int
     ) : Bool[] {
-        // TODO
-        fail "Not implemented.";
+        use register = Qubit[inputSize];
+        use register2 = Qubit[inputSize];
+
+        ApplyToEach(H, register);
+        op(register, register2);
+        ApplyToEach(H, register);
+
+        let res = MultiM(register);
+        ResetAll(register+register2);
+        return ResultArrayAsBoolArray(res);
     }
 
 
@@ -161,8 +183,12 @@ namespace MITRE.QSD.L06 {
     /// a three-qubit register, it would be |100>. If the unit tests provide
     /// that result, then you've implemented it properly.
     operation C01_RightShiftBy1 (input : Qubit[], output : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+       
+        for i in 0 .. Length(input) - 2 {
+            CNOT(input[i], output[i+1]);
+        }
+        // 3 test
+
     }
 
 
@@ -196,7 +222,13 @@ namespace MITRE.QSD.L06 {
     /// table. Hint: you can do it by only using the X gate, and controlled
     /// variants of the X gate (CNOT and CCNOT).
     operation C02_SimonBB (input : Qubit[], output : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        CNOT(input[2], output[1]);
+        X(input[2]);
+        Controlled X(input, output[2]);
+        X(input[0]);
+        X(input[1]);
+        Controlled X(input, output[2]);
+        ApplyToEach(CNOT(_, output[0]), input);
+        ApplyToEach(X, input);
     }
 }
