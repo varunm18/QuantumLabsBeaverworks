@@ -31,8 +31,14 @@ namespace MITRE.QSD.L08 {
         //  1. Your implementation of register reversal in Lab 2, Exercise 2.
         //  2. The Microsoft.Quantum.Intrinsic.R1Frac() gate.
 
-        // TODO
-        fail "Not implemented.";
+        for i in 0..Length(register!)-1{
+            H(register![i]);
+            for j in 1..Length(register!)-1-i{
+                Controlled R1Frac([register![i+j]], (2, j+1, register![i]));
+            }
+        }
+
+        SwapReverseRegister(register!);
     }
 
 
@@ -72,7 +78,17 @@ namespace MITRE.QSD.L08 {
         register : BigEndian,
         sampleRate : Double
     ) : Double {
-        // TODO
-        fail "Not implemented.";
+
+        Adjoint E01_QFT(register);
+        
+        let output = IntAsDouble(MeasureInteger(BigEndianAsLittleEndian(register)));
+
+        let N = IntAsDouble(2^Length(register!));
+        let time = N/sampleRate;
+
+        if output > N/2.0{
+            return (N - output)/time;
+        }
+        return output/time;
     }
 }
