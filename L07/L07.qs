@@ -35,8 +35,11 @@ namespace MITRE.QSD.L07 {
     /// which means it can only reversible operations.
     operation E01_XOR (classicalBits : Bool[], register : Qubit[]) : Unit
     is Adj {
-        // TODO
-        fail "Not implemented.";
+        for i in 0 .. Length(register)-1{
+            if(classicalBits[i]){
+                X(register[i]);
+            }
+        }
     }
 
 
@@ -58,8 +61,9 @@ namespace MITRE.QSD.L07 {
         register : Qubit[],
         target : Qubit
     ) : Unit {
-        // TODO
-        fail "Not implemented.";
+        ApplyToEach(X, register);
+        Controlled Z(register, target);
+        ApplyToEach(X, register);
     }
 
 
@@ -112,8 +116,21 @@ namespace MITRE.QSD.L07 {
         // then run Exercise1 in Adjoint mode to put the register back into
         // its original state.
 
-        // TODO
-        fail "Not implemented.";
+        E01_XOR(originalMessage, candidateEncryptionKey);
+
+        for i in 0..Length(encryptedMessage)-1{
+            if(not encryptedMessage[i]){
+                X(candidateEncryptionKey[i]);
+            }
+        }
+        Controlled Z(candidateEncryptionKey, target);
+        for i in 0..Length(encryptedMessage)-1{
+            if(not encryptedMessage[i]){
+                X(candidateEncryptionKey[i]);
+            }
+        }
+
+        Adjoint E01_XOR(originalMessage, candidateEncryptionKey);
     }
 
 
@@ -146,8 +163,12 @@ namespace MITRE.QSD.L07 {
         register : Qubit[],
         target : Qubit
     ) : Unit {
-        // TODO
-        fail "Not implemented.";
+        oracle(register, target);
+        ApplyToEach(H, register);
+        ApplyToEach(X, register);
+        Controlled Z(register, target);
+        ApplyToEach(X, register);
+        ApplyToEach(H, register);
     }
 
 
@@ -180,7 +201,17 @@ namespace MITRE.QSD.L07 {
         let N = PowD(2.0, IntAsDouble(numberOfQubits));
         let numIterations = Round(PI() / 4.0 * Sqrt(N));
 
-        // TODO
-        fail "Not implemented.";
+        use (register, target) = (Qubit[numberOfQubits], Qubit());
+        X(target);
+
+        ApplyToEach(H, register);
+
+        for i in 0..numIterations-1{
+            E04_GroverIteration(oracle, register, target);
+        }
+
+        let res =  ResultArrayAsBoolArray(MultiM(register));
+        ResetAll(register+[target]);
+        return res;
     }
 }
