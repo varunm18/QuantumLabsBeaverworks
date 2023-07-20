@@ -39,8 +39,8 @@ namespace MITRE.QSD.L10 {
         // this operation, so it can just be run backwards to decode the
         // logical qubit back into the original three unentangled qubits.
 
-        // TODO
-        fail "Not implemented.";
+        CNOT(original, spares[0]);
+        CNOT(original, spares[1]);
     }
 
 
@@ -72,8 +72,18 @@ namespace MITRE.QSD.L10 {
         // makes things easier. Don't forget to reset the qubits you allocate
         // back to the |0> state!
 
-        // TODO
-        fail "Not implemented.";
+        use qubit = Qubit();
+
+        mutable resArray = [Zero,size=2];
+
+        for i in 0..1{
+            CNOT(register[0], qubit);
+            CNOT(register[i+1], qubit);
+            set resArray w/= i <- M(qubit);
+            Reset(qubit);
+        }
+
+        return resArray;
     }
 
 
@@ -105,8 +115,20 @@ namespace MITRE.QSD.L10 {
         // out to the console. You might want to consider printing the index
         // of the qubit you identified as broken to help with debugging.
 
-        // TODO
-        fail "Not implemented.";
+        let firstM = syndromeMeasurement[0];
+        let secondM = syndromeMeasurement[1];
+
+        if(firstM==One){
+            if(secondM==One){
+                X(register[0]);
+            }
+            else{
+                X(register[1]);
+            }
+        }
+        elif(secondM==One){
+            X(register[2]);
+        }
     }
 
 
@@ -131,8 +153,22 @@ namespace MITRE.QSD.L10 {
         original : Qubit,
         spares : Qubit[]
     ) : Unit is Adj {
-        // TODO
-        fail "Not implemented.";
+        ApplyToEachA(H, [spares[3], spares[4], spares[5]]);
+
+        CNOT(original, spares[0]);
+        CNOT(original, spares[1]);
+
+        CNOT(spares[5], original);
+        CNOT(spares[5], spares[0]);
+        CNOT(spares[5], spares[2]);
+
+        CNOT(spares[4], original);
+        CNOT(spares[4], spares[1]);
+        CNOT(spares[4], spares[2]);
+
+        CNOT(spares[3], spares[0]);
+        CNOT(spares[3], spares[1]);
+        CNOT(spares[3], spares[2]);
     }
 
 
@@ -153,8 +189,28 @@ namespace MITRE.QSD.L10 {
     /// An array of the 3 syndrome measurement results that the Steane code
     /// produces.
     operation E05_SteaneBitSyndrome (register : Qubit[]) : Result[] {
-        // TODO
-        fail "Not implemented.";
+        use qubits = Qubit[3];
+
+        CNOT(register[0], qubits[0]);
+        CNOT(register[2], qubits[0]);
+        CNOT(register[4], qubits[0]);
+        CNOT(register[6], qubits[0]);
+
+        CNOT(register[1], qubits[1]);
+        CNOT(register[2], qubits[1]);
+        CNOT(register[5], qubits[1]);
+        CNOT(register[6], qubits[1]);
+
+        CNOT(register[3], qubits[2]);
+        CNOT(register[4], qubits[2]);
+        CNOT(register[5], qubits[2]);
+        CNOT(register[6], qubits[2]);
+
+        SwapReverseRegister(qubits);
+
+        let res = MultiM(qubits);
+
+        return res;
     }
 
 
@@ -175,8 +231,33 @@ namespace MITRE.QSD.L10 {
     /// An array of the 3 syndrome measurement results that the Steane code
     /// produces.
     operation E06_SteanePhaseSyndrome (register : Qubit[]) : Result[] {
-        // TODO
-        fail "Not implemented.";
+        
+        use qubits = Qubit[3];
+
+        ApplyToEach(H, qubits);
+
+        CNOT(qubits[0], register[0]);
+        CNOT(qubits[0], register[2]);
+        CNOT(qubits[0], register[4]);
+        CNOT(qubits[0], register[6]);
+
+        CNOT(qubits[1], register[1]);
+        CNOT(qubits[1], register[2]);
+        CNOT(qubits[1], register[5]);
+        CNOT(qubits[1], register[6]);
+
+        CNOT(qubits[2], register[3]);
+        CNOT(qubits[2], register[4]);
+        CNOT(qubits[2], register[5]);
+        CNOT(qubits[2], register[6]);
+
+        ApplyToEach(H, qubits);
+
+        SwapReverseRegister(qubits);
+
+        let res = MultiM(qubits);
+
+        return res;
     }
 
 
@@ -216,8 +297,7 @@ namespace MITRE.QSD.L10 {
     /// classical method. It doesn't have any quantum parts to it, just lots
     /// of regular old classical math and logic.
     function E07_SyndromeToIndex (syndrome : Result[]) : Int {
-        // TODO
-        fail "Not implemented.";
+        return ResultArrayAsInt(Reversed(syndrome)) - 1;
     }
 
 
@@ -243,7 +323,17 @@ namespace MITRE.QSD.L10 {
     /// bunch of different original qubit states. Don't worry if it doesn't
     /// immediately finish!
     operation E08_SteaneCorrection (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        //use 5-7
+        mutable syndrome = E05_SteaneBitSyndrome(register);
+        mutable index = E07_SyndromeToIndex(syndrome);
+        if index!=-1{
+            X(register[index]);
+        }
+
+        set syndrome = E06_SteanePhaseSyndrome(register);
+        set index = E07_SyndromeToIndex(syndrome);
+        if index!=-1{
+            Z(register[index]);
+        }
     }
 }
