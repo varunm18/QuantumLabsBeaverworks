@@ -43,9 +43,12 @@ namespace MITRE.QSD.L09 {
         // exponent classically. You can use the
         // Microsoft.Quantum.Arithmetic.MultiplyByModularInteger() function to
         // do an in-place quantum modular multiplication.
-
-        // TODO
-        fail "Not implemented.";
+        X(output[Length(output)-1]);
+        let le = LittleEndian(output);
+        for i in Length(input)-1..-1..0{
+            let pow = 2^(Length(input)-i-1);
+            Controlled MultiplyByModularInteger([input[i]], (ExpModI(a, pow, b), b, le));
+        }
     }
 
 
@@ -89,8 +92,20 @@ namespace MITRE.QSD.L09 {
         // you do, run the test again. Also, look at the output of the test to
         // see what values you came up with versus what the system expects.
 
-        // TODO
-        fail "Not implemented.";
+
+        let n = Ceiling(Lg(IntAsDouble(numberToFactor)));
+        use (input, output) = (Qubit[n*2], Qubit[n]);
+
+        ApplyToEach(H, input);
+        E01_ModExp(guess, numberToFactor, input, output);
+
+        Adjoint QFT(BigEndian(input));
+
+        let res = MeasureInteger(BigEndianAsLittleEndian(BigEndian(input)));
+
+        ResetAll(input+output);
+
+        return (res, 2^(n*2));
     }
 
 
@@ -122,8 +137,23 @@ namespace MITRE.QSD.L09 {
         denominator : Int,
         denominatorThreshold : Int
     ) : (Int, Int) {
-        // TODO
-        fail "Not implemented.";
+        mutable(dPrev, mPrev) = (0,1);
+        mutable(P, Q, a, r, m, d) = (numerator, denominator, 0, numerator, 0, 1);
+
+        while d<denominatorThreshold and r!=0{
+            set (P, Q) = (Q, r);
+            set r = P%Q;
+            set a = P/Q;
+
+            set (m, mPrev) = (a*m+mPrev, m);
+            set (d, dPrev) = (a*d+dPrev, d);
+        }
+
+        if d>= denominatorThreshold{
+            return (mPrev, dPrev);
+        }
+        return(m, d);
+        
     }
 
 
@@ -157,8 +187,15 @@ namespace MITRE.QSD.L09 {
         // Microsoft.Quantum.Math.GreatestCommonDivisorI()
         // function to calculate the GCD of two numbers.
 
-        // TODO
-        fail "Not implemented.";
+        mutable candidate = 0;
+
+        repeat {
+            let (n, d) = E02_FindApproxPeriod(numberToFactor, guess);
+            let (num, denom) = E03_FindPeriodCandidate(n, d, numberToFactor);
+            set candidate = denom;
+        } until guess^candidate % numberToFactor == 1;
+
+        return candidate;
     }
 
 
@@ -190,7 +227,14 @@ namespace MITRE.QSD.L09 {
         guess : Int,
         period : Int
     ) : Int {
-        // TODO
-        fail "Not implemented.";
+        let factor1 = guess^(period/2)+1;
+        let factor2 = guess^(period/2)-1;
+        if period%2==1{
+            return -1;
+        }
+        if factor1 % numberToFactor == 0 {
+            return -2;
+        }
+        return GreatestCommonDivisorI(numberToFactor, guess^(period/2)-1);
     }
 }
