@@ -34,13 +34,29 @@ namespace MITRE.QSD.L11 {
 		register : LittleEndian
 	) : Unit {
 		// Hint: The bit shift operator (>>>) may be useful here for extracting
-		// the individual bits of "secondTerm".
-		//
-		// Recall you can use the unwrap operator (!) to access the underlying
-		// array in types like LittleEndian.
-		
-		// TODO
-		fail "Not implemented.";
+        // the individual bits of "secondTerm".
+        //
+        // Recall you can use the unwrap operator (!) to access the underlying
+        // array in types like LittleEndian.
+        mutable secondTermCopy = secondTerm;
+        let leastSigBit = secondTermCopy%2;
+        set secondTermCopy >>>= 1;
+
+        H(register![0]);
+        mutable lastOn = -1;
+        for i in 1..Length(register!)-1 {
+            let b = secondTermCopy%2;
+            set secondTermCopy >>>= 1;
+
+            if b == 1 {
+                set lastOn = i;
+                CNOT(register![0], register![i]);
+            }
+        }
+
+        if leastSigBit == 0 and lastOn >= 0 {
+            Controlled X([register![lastOn]], register![0]);
+		}
 	}
 
 
@@ -61,8 +77,10 @@ namespace MITRE.QSD.L11 {
 	/// the Toffoli simulator, see:
 	/// https://learn.microsoft.com/en-us/azure/quantum/machines/toffoli-simulator
 	operation E02_IncrementByOne (register : LittleEndian) : Unit {
-		// TODO
-		fail "Not implemented.";
+		for index in Length(register!)-1 .. -1 .. 1 {
+            Controlled X(register![0 .. index-1], register![index]);
+        }
+        X(register![0]);
 	}
 
 
@@ -84,7 +102,13 @@ namespace MITRE.QSD.L11 {
 		// simulator to handle measurements; it's easiest to avoid them for
 		// this exercise.
 
-		// TODO
-		fail "Not implemented.";
+		use qubits = Qubit[100];
+
+		H(qubits[0]);
+		for i in 1..99 {
+			CNOT(qubits[i-1], qubits[i]);
+		}
+
+		QFT(BigEndian(qubits));
 	}
 }
