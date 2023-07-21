@@ -44,7 +44,9 @@ namespace MITRE.QSD.L09 {
         // Microsoft.Quantum.Arithmetic.MultiplyByModularInteger() function to
         // do an in-place quantum modular multiplication.
         X(output[Length(output)-1]);
+
         let le = LittleEndian(output);
+        
         for i in Length(input)-1..-1..0{
             let pow = 2^(Length(input)-i-1);
             Controlled MultiplyByModularInteger([input[i]], (ExpModI(a, pow, b), b, le));
