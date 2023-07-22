@@ -1,5 +1,7 @@
 # Quantum Computing Labs
 
+Written in Q#
+
 Completed Labs as a Part of the 2023 MIT Beaverworks Summer Institute Quantum Computers Class(Taught by the MITRE Corporation)
 
 ## Details: 
